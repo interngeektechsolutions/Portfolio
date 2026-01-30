@@ -223,11 +223,11 @@ export default function Blog() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-              className="glass-card p-4 sm:p-5 lg:p-6 group cursor-pointer"
+              className="glass-card p-5 sm:p-6 lg:p-8 group cursor-pointer"
             >
               {/* Category Badge */}
-              <div className="flex items-center justify-between mb-3 sm:mb-4">
-                <span className="px-2.5 sm:px-3 py-1 rounded-full bg-white/5 text-indigo-400 text-[10px] sm:text-xs font-medium">
+              <div className="flex items-center justify-between mb-4 sm:mb-5">
+                <span className="px-3 sm:px-4 py-1.5 rounded-full bg-white/5 text-indigo-400 text-[10px] sm:text-xs lg:text-sm font-medium">
                   {post.category}
                 </span>
                 <span className="flex items-center gap-1 text-gray-500 text-[10px] sm:text-xs">
@@ -237,17 +237,17 @@ export default function Blog() {
               </div>
 
               {/* Title */}
-              <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-2 sm:mb-3 group-hover:text-indigo-400 transition-colors line-clamp-2">
+              <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-3 sm:mb-4 group-hover:text-indigo-400 transition-colors leading-tight line-clamp-2">
                 {post.title}
               </h3>
 
               {/* Excerpt */}
-              <p className="text-gray-400 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
+              <p className="text-gray-400 text-xs sm:text-sm lg:text-base mb-4 sm:mb-5 leading-relaxed line-clamp-2">
                 {post.excerpt}
               </p>
 
               {/* Tags */}
-              <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+              <div className="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-5">
                 {post.tags.slice(0, 2).map((tag) => (
                   <span
                     key={tag}
@@ -260,8 +260,8 @@ export default function Blog() {
               </div>
 
               {/* Meta */}
-              <div className="flex items-center justify-between pt-3 sm:pt-4 border-t border-white/5">
-                <div className="flex items-center gap-2 sm:gap-3 text-[10px] sm:text-xs text-gray-500">
+              <div className="flex items-center justify-between pt-4 sm:pt-5 mt-2 border-t border-white/5">
+                <div className="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-xs lg:text-sm text-gray-500">
                   <span className="flex items-center gap-1">
                     <Calendar size={10} className="sm:w-3 sm:h-3" />
                     {post.date}

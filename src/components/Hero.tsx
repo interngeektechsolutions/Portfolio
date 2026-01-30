@@ -191,7 +191,7 @@ export default function Hero() {
         {/* Stats */}
         <motion.div
           variants={itemVariants}
-          className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8"
+          className="mt-14 sm:mt-18 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-7 md:gap-10"
         >
           {stats.map((stat, index) => (
             <motion.div

@@ -109,11 +109,11 @@ export default function Contact() {
               ) : (
                 <form
                   onSubmit={handleSubmit}
-                  className="space-y-4 sm:space-y-6"
+                  className="space-y-5 sm:space-y-7"
                 >
-                  <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+                  <div className="grid sm:grid-cols-2 gap-5 sm:gap-7">
                     <div>
-                      <label className="block text-xs sm:text-sm text-gray-400 mb-1.5 sm:mb-2">
+                      <label className="block text-xs sm:text-sm lg:text-base text-gray-400 mb-2 sm:mb-3">
                         Your Name
                       </label>
                       <input
@@ -127,7 +127,7 @@ export default function Contact() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs sm:text-sm text-gray-400 mb-1.5 sm:mb-2">
+                      <label className="block text-xs sm:text-sm lg:text-base text-gray-400 mb-2 sm:mb-3">
                         Your Email
                       </label>
                       <input
@@ -143,7 +143,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="block text-xs sm:text-sm text-gray-400 mb-1.5 sm:mb-2">
+                    <label className="block text-xs sm:text-sm lg:text-base text-gray-400 mb-2 sm:mb-3">
                       Subject
                     </label>
                     <select
@@ -175,7 +175,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="block text-xs sm:text-sm text-gray-400 mb-1.5 sm:mb-2">
+                    <label className="block text-xs sm:text-sm lg:text-base text-gray-400 mb-2 sm:mb-3">
                       Message
                     </label>
                     <textarea
@@ -183,7 +183,7 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      rows={4}
+                      rows={5}
                       className="input-field resize-none"
                       placeholder="Tell me about your project..."
                     />
@@ -221,29 +221,29 @@ export default function Contact() {
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="space-y-4 sm:space-y-6"
+            className="space-y-5 sm:space-y-7 lg:space-y-8"
           >
             {/* Quick Connect */}
-            <div className="glass-card p-5 sm:p-6 md:p-8">
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-4 sm:mb-6 flex items-center gap-2">
-                <Sparkles className="text-indigo-400" size={20} />
+            <div className="glass-card p-6 sm:p-7 md:p-9">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-5 sm:mb-7 flex items-center gap-3">
+                <Sparkles className="text-indigo-400" size={22} />
                 Quick Connect
               </h3>
 
-              <div className="space-y-3 sm:space-y-4">
+              <div className="space-y-4 sm:space-y-5">
                 <motion.a
                   href="mailto:hello@example.com"
                   whileHover={{ scale: 1.02, x: 5 }}
-                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors group"
+                  className="flex items-center gap-4 sm:gap-5 p-4 sm:p-5 rounded-xl bg-white/5 hover:bg-white/10 transition-colors group"
                 >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center flex-shrink-0">
-                    <Mail size={18} className="text-white sm:w-5 sm:h-5" />
+                  <div className="w-11 h-11 sm:w-13 sm:h-13 lg:w-14 lg:h-14 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                    <Mail size={20} className="text-white sm:w-6 sm:h-6" />
                   </div>
                   <div className="min-w-0">
-                    <div className="text-xs sm:text-sm text-gray-500">
+                    <div className="text-xs sm:text-sm lg:text-base text-gray-500 mb-1">
                       Email
                     </div>
-                    <div className="text-white text-sm sm:text-base group-hover:text-indigo-400 transition-colors truncate">
+                    <div className="text-white text-sm sm:text-base lg:text-lg group-hover:text-indigo-400 transition-colors truncate">
                       hello@example.com
                     </div>
                   </div>
@@ -252,16 +252,16 @@ export default function Contact() {
                 <motion.a
                   href="tel:+1234567890"
                   whileHover={{ scale: 1.02, x: 5 }}
-                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors group"
+                  className="flex items-center gap-4 sm:gap-5 p-4 sm:p-5 rounded-xl bg-white/5 hover:bg-white/10 transition-colors group"
                 >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0">
-                    <Phone size={18} className="text-white sm:w-5 sm:h-5" />
+                  <div className="w-11 h-11 sm:w-13 sm:h-13 lg:w-14 lg:h-14 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0">
+                    <Phone size={20} className="text-white sm:w-6 sm:h-6" />
                   </div>
                   <div className="min-w-0">
-                    <div className="text-xs sm:text-sm text-gray-500">
+                    <div className="text-xs sm:text-sm lg:text-base text-gray-500 mb-1">
                       Phone
                     </div>
-                    <div className="text-white text-sm sm:text-base group-hover:text-indigo-400 transition-colors">
+                    <div className="text-white text-sm sm:text-base lg:text-lg group-hover:text-indigo-400 transition-colors">
                       +1 (234) 567-890
                     </div>
                   </div>
@@ -269,16 +269,16 @@ export default function Contact() {
 
                 <motion.div
                   whileHover={{ scale: 1.02, x: 5 }}
-                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-white/5"
+                  className="flex items-center gap-4 sm:gap-5 p-4 sm:p-5 rounded-xl bg-white/5"
                 >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center flex-shrink-0">
-                    <MapPin size={18} className="text-white sm:w-5 sm:h-5" />
+                  <div className="w-11 h-11 sm:w-13 sm:h-13 lg:w-14 lg:h-14 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center flex-shrink-0">
+                    <MapPin size={20} className="text-white sm:w-6 sm:h-6" />
                   </div>
                   <div className="min-w-0">
-                    <div className="text-xs sm:text-sm text-gray-500">
+                    <div className="text-xs sm:text-sm lg:text-base text-gray-500 mb-1">
                       Location
                     </div>
-                    <div className="text-white text-sm sm:text-base">
+                    <div className="text-white text-sm sm:text-base lg:text-lg">
                       San Francisco, CA (Remote)
                     </div>
                   </div>
@@ -287,14 +287,14 @@ export default function Contact() {
             </div>
 
             {/* Availability */}
-            <div className="gradient-border rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8">
-              <div className="flex items-start gap-3 sm:gap-4">
-                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500 mt-1.5 sm:mt-2 animate-pulse flex-shrink-0" />
+            <div className="gradient-border rounded-2xl sm:rounded-3xl p-6 sm:p-7 md:p-9">
+              <div className="flex items-start gap-4 sm:gap-5">
+                <div className="w-3 h-3 sm:w-3.5 sm:h-3.5 rounded-full bg-green-500 mt-1.5 sm:mt-2 animate-pulse flex-shrink-0" />
                 <div>
-                  <h4 className="text-white font-bold text-base sm:text-lg mb-1.5 sm:mb-2">
+                  <h4 className="text-white font-bold text-base sm:text-lg lg:text-xl mb-2 sm:mb-3">
                     Available for Work
                   </h4>
-                  <p className="text-gray-400 text-xs sm:text-sm">
+                  <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
                     I&apos;m currently open to new opportunities, freelance
                     projects, and consulting. Response time: within 24 hours.
                   </p>
@@ -303,14 +303,14 @@ export default function Contact() {
             </div>
 
             {/* Fun Fact */}
-            <div className="glass-card p-5 sm:p-6 md:p-8">
-              <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                <MessageSquare className="text-indigo-400" size={20} />
-                <h4 className="text-white font-bold text-sm sm:text-base">
+            <div className="glass-card p-6 sm:p-7 md:p-9">
+              <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
+                <MessageSquare className="text-indigo-400" size={22} />
+                <h4 className="text-white font-bold text-base sm:text-lg">
                   Fun Fact
                 </h4>
               </div>
-              <p className="text-gray-400 text-xs sm:text-sm">
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
                 I&apos;ve written over 500,000 lines of production code and
                 drunk approximately 2,000 cups of coffee while doing it. ☕
               </p>

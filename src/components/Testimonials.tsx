@@ -61,33 +61,33 @@ export default function Testimonials() {
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7 lg:gap-10">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-              className="glass-card p-5 sm:p-6 lg:p-8 relative"
+              className="glass-card p-6 sm:p-7 lg:p-10 relative"
             >
               {/* Quote Icon */}
-              <Quote className="w-8 h-8 sm:w-10 sm:h-10 text-indigo-500/30 absolute top-4 right-4 sm:top-6 sm:right-6" />
+              <Quote className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-indigo-500/30 absolute top-5 right-5 sm:top-7 sm:right-7" />
 
               {/* Content */}
-              <p className="text-gray-300 text-sm sm:text-base mb-5 sm:mb-8 relative z-10 leading-relaxed">
+              <p className="text-gray-300 text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 lg:mb-10 relative z-10 leading-relaxed">
                 &ldquo;{testimonial.content}&rdquo;
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3 sm:gap-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-sm sm:text-base flex-shrink-0">
+              <div className="flex items-center gap-4 sm:gap-5">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-sm sm:text-base lg:text-lg flex-shrink-0">
                   {testimonial.avatar}
                 </div>
                 <div className="min-w-0">
-                  <div className="text-white font-semibold text-sm sm:text-base truncate">
+                  <div className="text-white font-semibold text-sm sm:text-base lg:text-lg truncate mb-1">
                     {testimonial.name}
                   </div>
-                  <div className="text-gray-500 text-xs sm:text-sm truncate">
+                  <div className="text-gray-500 text-xs sm:text-sm lg:text-base truncate">
                     {testimonial.role}
                   </div>
                 </div>

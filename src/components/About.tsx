@@ -168,15 +168,15 @@ export default function About() {
                 <motion.div
                   key={trait.title}
                   variants={itemVariants}
-                  className="glass-card p-4 sm:p-5"
+                  className="glass-card p-5 sm:p-6 lg:p-7"
                 >
                   <trait.icon
-                    className={`w-6 h-6 sm:w-8 sm:h-8 ${trait.color} mb-2 sm:mb-3`}
+                    className={`w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 ${trait.color} mb-3 sm:mb-4`}
                   />
-                  <h4 className="text-white font-semibold text-sm sm:text-base mb-1">
+                  <h4 className="text-white font-semibold text-sm sm:text-base lg:text-lg mb-2 sm:mb-2.5">
                     {trait.title}
                   </h4>
-                  <p className="text-gray-500 text-xs sm:text-sm leading-relaxed">
+                  <p className="text-gray-500 text-xs sm:text-sm lg:text-base leading-relaxed">
                     {trait.description}
                   </p>
                 </motion.div>
@@ -201,9 +201,9 @@ export default function About() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.4, delay: 0.4 + groupIndex * 0.1 }}
-                className="glass-card p-4 sm:p-6"
+                className="glass-card p-5 sm:p-6 lg:p-8"
               >
-                <div className="flex items-center gap-2 mb-3 sm:mb-4">
+                <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-5 lg:mb-6">
                   <div
                     className={`w-2 h-2 rounded-full bg-gradient-to-r ${skillGroup.color}`}
                   />
@@ -222,7 +222,7 @@ export default function About() {
                         scale: 1.05,
                         backgroundColor: "rgba(99, 102, 241, 0.15)",
                       }}
-                      className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/5 text-gray-300 text-xs sm:text-sm border border-white/10 hover:border-indigo-500/50 transition-all cursor-default"
+                      className="px-4 sm:px-5 lg:px-6 py-2 sm:py-2.5 lg:py-3 rounded-full bg-white/5 text-gray-300 text-xs sm:text-sm lg:text-base border border-white/10 hover:border-indigo-500/50 transition-all cursor-default"
                     >
                       {skill}
                     </motion.span>
@@ -236,7 +236,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: 0.8 }}
-              className="gradient-border p-4 sm:p-6"
+              className="gradient-border p-5 sm:p-7 lg:p-8"
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-0">
                 <div>

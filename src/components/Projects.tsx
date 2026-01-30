@@ -159,22 +159,22 @@ export default function Projects() {
               </div>
 
               {/* Content */}
-              <div className="p-4 sm:p-6 lg:p-8">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2 sm:mb-3 group-hover:text-indigo-400 transition-colors">
+              <div className="p-5 sm:p-7 lg:p-9">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4 group-hover:text-indigo-400 transition-colors leading-tight">
                   {project.title}
                 </h3>
-                <p className="text-gray-400 text-sm sm:text-base mb-4 sm:mb-6 line-clamp-2">
+                <p className="text-gray-400 text-sm sm:text-base lg:text-lg mb-5 sm:mb-7 leading-relaxed line-clamp-2">
                   {project.description}
                 </p>
 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-4 sm:mb-6 p-3 sm:p-4 rounded-xl bg-white/5">
+                <div className="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-5 mb-5 sm:mb-7 p-4 sm:p-5 lg:p-6 rounded-xl bg-white/5">
                   {Object.entries(project.stats).map(([key, value]) => (
-                    <div key={key} className="text-center">
-                      <div className="text-sm sm:text-base lg:text-lg font-bold text-white">
+                    <div key={key} className="text-center py-1">
+                      <div className="text-base sm:text-lg lg:text-xl font-bold text-white mb-1">
                         {value}
                       </div>
-                      <div className="text-[10px] sm:text-xs text-gray-500 uppercase">
+                      <div className="text-[10px] sm:text-xs lg:text-sm text-gray-500 uppercase tracking-wide">
                         {key}
                       </div>
                     </div>
@@ -182,11 +182,11 @@ export default function Projects() {
                 </div>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
+                <div className="flex flex-wrap gap-2 sm:gap-2.5 lg:gap-3 mb-5 sm:mb-7">
                   {project.tags.slice(0, 4).map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs bg-white/5 text-gray-400 border border-white/10"
+                      className="px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs lg:text-sm bg-white/5 text-gray-400 border border-white/10"
                     >
                       {tag}
                     </span>

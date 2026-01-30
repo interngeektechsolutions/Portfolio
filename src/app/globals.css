@@ -611,20 +611,26 @@ select.input-field {
 
 .section-header {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   padding: 0 1rem;
 }
 
 @media (min-width: 640px) {
   .section-header {
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
     padding: 0;
   }
 }
 
 @media (min-width: 768px) {
   .section-header {
-    margin-bottom: 4rem;
+    margin-bottom: 4.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-header {
+    margin-bottom: 5rem;
   }
 }
 
